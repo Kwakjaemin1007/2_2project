@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "@drawable/signin"
+
+    tools:context=".StartActivity">
+
+
+    <TextView
+        android:id="@+id/signinUsernameText"
+        android:layout_width="335dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="256dp"
+        android:text="Username"
+        android:textSize="18sp"
+        app:fontFamily="@font/patrickhand_regular"
+        app:layout_constraintBottom_toTopOf="@+id/signinUsername"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/signinUsername"
+        android:layout_width="335dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/inputborder"
+        android:inputType="text"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signinUsernameText" />
+
+    <TextView
+        android:id="@+id/signinPasswordText"
+        android:layout_width="335dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="24dp"
+        android:text="Password"
+        android:textSize="18sp"
+        app:fontFamily="@font/patrickhand_regular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signinUsername" />
+
+    <EditText
+        android:id="@+id/signinPassword"
+        android:layout_width="335dp"
+        android:layout_height="48dp"
+        android:background="@drawable/inputborder"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signinPasswordText" />
+
+    <ImageButton
+        android:id="@+id/signinBtn"
+        android:layout_width="335dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/border"
+        android:contentDescription="Sign in button"
+        android:src="@drawable/signinbuttonblack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signinPassword" />
+
+    <ImageButton
+        android:id="@+id/registerBtn"
+        android:layout_width="335dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/border"
+        android:contentDescription="Register button"
+        android:src="@drawable/registerbuttonwhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signinBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
