@@ -12,15 +12,18 @@ class MainActivity : AppCompatActivity() {
         Thread.sleep(3000)
         installSplashScreen()
         setContentView(R.layout.activity_start)
+
+        //listener for register button
+        val register = findViewById<ImageButton>(R.id.registerBtn)
+        register.setOnClickListener {
+            val intent = Intent(this, RegisterActivity::class.java)
+            startActivity(intent)
+        }
+
         //listener for signin button
         val signin = findViewById<ImageButton>(R.id.signinBtn)
         signin.setOnClickListener {
             val intent = Intent(this, SignInActivity::class.java)
-            startActivity(intent)
-        }
-        val register = findViewById<ImageButton>(R.id.registerBtn)
-        signin.setOnClickListener {
-            val intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent)
         }
     }

@@ -4,10 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background = "@drawable/signin"
-
+    android:background="@drawable/signin"
     tools:context=".StartActivity">
-
 
     <TextView
         android:id="@+id/signinUsernameText"
@@ -15,8 +13,8 @@
         android:layout_height="28dp"
         android:layout_marginTop="256dp"
         android:text="Username"
-        android:textSize="18sp"
         app:fontFamily="@font/patrickhand_regular"
+        android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/signinUsername"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.526"
